@@ -32,9 +32,30 @@ td:first-child,th:first-child{text-align:left}tr.hl td{background:#FFE699;font-w
 .tw{max-height:430px;overflow:auto}.note{font-size:11.5px;color:#555}.flt{font-size:12px;margin:4px 0 8px}.flt select,.flt input{font-size:12px;padding:2px 4px;margin-right:10px}
 .chk{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:11.5px;max-height:90px;overflow:auto;border:1px solid #ddd;padding:4px;border-radius:4px}
 .src{font-size:11.5px;color:#444;background:#fff;padding:8px 14px;border-radius:6px}.src code{font-size:11px}
-@media(max-width:1000px){.grid{grid-template-columns:1fr}.full{grid-column:auto}}</style></head><body>
+@media(max-width:1000px){.grid{grid-template-columns:1fr}.full{grid-column:auto}}</style><style id="sitenav-css">
+html{scroll-padding-top:76px}
+nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:center;gap:8px;padding:8px 10px;font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;border-radius:22px;white-space:nowrap;box-sizing:border-box}
+nav.topnav a.home{flex:0 0 auto;padding:0 16px;background:#ED1C24;color:#fff;font-weight:700;font-size:15px}
+nav.topnav a.home:hover{background:#c8141b}
+nav.topnav .pills{display:flex;gap:6px;flex:1 1 auto;min-width:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 28px 0 0;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}
+nav.topnav .pills::-webkit-scrollbar{display:none}
+nav.topnav .pills a{padding:0 14px;background:#2F4F86;color:#fff;border:2px solid #4A6BA6}
+nav.topnav .pills a:hover{background:#3B5F9C}
+nav.topnav .pills a[aria-current="page"]{background:#fff;color:#1F3864;font-weight:700;border-color:#ED1C24}
+.pager{display:flex;flex-wrap:wrap;gap:10px;padding:20px 24px 32px;max-width:1500px;box-sizing:border-box}
+.pager a{flex:1 1 220px;display:flex;flex-direction:column;justify-content:center;min-height:60px;padding:10px 18px;border-radius:12px;background:#1F3864;color:#fff;text-decoration:none;font-size:16px;font-weight:700;box-sizing:border-box;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.pager a small{font-weight:400;font-size:12px;opacity:.9;margin-bottom:2px}
+.pager a.next{background:#ED1C24;text-align:right}
+.pager a.allb{flex:0 1 auto;background:#fff;color:#1F3864;border:2px solid #1F3864;text-align:center;align-items:center}
+.wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:600;overflow-wrap:anywhere}
+.wrap a:hover{color:#ED1C24}
+.wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
+select{max-width:100%}
+@media(max-width:600px){.flt select,.flt input{font-size:15px;min-height:40px;margin:3px 8px 3px 0}.pager{padding:16px 12px 28px}.pager a{flex-basis:100%;text-align:center!important;align-items:center}.wrap{padding-left:12px!important;padding-right:12px!important}header{padding-left:12px!important;padding-right:12px!important}}
+</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html" aria-current="page">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Channel Mix – Direct vs Associate vs Non-associate Distributors, T30/B30, Investor Class</h1><div class="sub">Dataset: Classified Average AUM – Scheme Category-wise, All MFs (classified_aaum_scheme_categorywise) · Period: Jul-25 to Sep-26 (15 months, monthly) · ₹ crore unless stated (L cr = lakh crore) · Built 21-Oct-2026 11:42 IST for Hasnain, Kotak AMC</div></header>
-<nav><a href="index.html">← All dashboards</a><a href="main_dashboard.html">Main AMFI dashboard</a></nav>
+
 <div class="wrap"><div class="what"><b>What this shows.</b> Monthly average AUM for all mutual funds split by channel: direct plans, associate distributors (the sponsor's group, e.g. bank-owned distributors) and non-associate distributors. Each channel is also split by city tier (top 30 / beyond 30) and investor class, and by scheme category. This is the core view of where distributor money sits.</div>
 <div class="kpis"><div class="k"><div class="t">Direct share</div><div class="v">48.8%</div><div class="s">+113 bps YoY</div></div><div class="k"><div class="t">Regular AAUM</div><div class="v">₹45.80 L cr</div><div class="s">+10.5% YoY</div></div><div class="k"><div class="t">Associate share of regular</div><div class="v">11.6%</div><div class="s">Sep-26</div></div><div class="k"><div class="t">B30 share</div><div class="v">18.9%</div><div class="s">₹16.90 L cr</div></div></div>
 <h2>Key takeaways</h2><div class="kt"><ul><li>Direct plans are <b>48.8%</b> of industry AAUM in Sep-26 (incl. domestic FoF), against 47.7% a year earlier and 47.7% in Jul-25. Regular (distributor) AAUM is ₹45.80 L cr, +10.5% YoY, vs direct +15.6%.</li><li>Within regular plans, associate (sponsor-group) distributors hold 11.6%; non-associate distributors hold 88.4% (₹40.47 L cr).</li><li>B30 (beyond the top 30 cities) is 18.9% of AAUM (₹16.90 L cr), against 18.6% a year ago. B30 money is mostly distributor-led: only 31.7% of B30 AAUM is direct, against 52.8% in T30.</li><li>By investor class, direct dominates corporates (76.9% direct) but not retail (30.3%) or HNI (31.0%). Distributors still hold ₹16.90 L cr of retail AAUM.</li><li>Equity categories with the lowest direct share in Sep-26: Dividend Yield Fund (11.0%), Multi Cap Fund (16.5%); highest: Flexi Cap Fund (37.1%). Note the Aug-26 associate-distributor spike (sponsor-sourced associate AAUM ₹65,777 cr vs ₹1,380 cr in Jul-26), which looks like a one-month reporting effect.</li></ul></div>
@@ -92,4 +113,4 @@ function ct(){const r=D.cats[$('fm2').value].map(x=>Object.assign({ds:x.d/x.t,as
  mk('c7','bar',r.map(x=>x.c),[ds('Direct',r.map(x=>x.ds),1),ds('Associate',r.map(x=>x.as),3),ds('Non-associate',r.map(x=>x.ns),0)],{stacked:true,fmt:'pct',max:1,title:'Channel mix by category – '+$('fm2').value});
  table('t1',[{h:'Category / line',k:'c'},{h:'Group',k:'g'},{h:'AAUM ₹ cr',k:'t',f:'n'},{h:'Direct ₹ cr',k:'d',f:'n'},{h:'Associate ₹ cr',k:'a',f:'n'},{h:'Non-assoc ₹ cr',k:'n',f:'n'},{h:'Direct %',k:'ds',f:'pct'}],r.slice().sort((a,b)=>b.t-a.t));}
 $('fm').onchange=iv;$('fm2').onchange=ct;iv();ct();
-</script></body></html>
+</script><div class="pager"><a class="prev" href="scheme_aaum.html"><small>&larr; Previous</small>Scheme-wise Average AUM</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="state_aaum.html"><small>Next &rarr;</small>State-wise Average AUM</a></div><script>(function(){var p=document.querySelector("nav.topnav .pills"),c=p&&p.querySelector("[aria-current]");if(c)p.scrollLeft=c.offsetLeft-p.offsetLeft-(p.clientWidth-c.offsetWidth)/2;})();</script></body></html>
