@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
 <title>Investor Class Mix – Retail, HNI, Corporates, Banks, FIIs – AMFI dashboards</title><script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
@@ -33,26 +33,24 @@ td:first-child,th:first-child{text-align:left}tr.hl td{background:#FFE699;font-w
 .chk{display:flex;flex-wrap:wrap;gap:2px 12px;font-size:11.5px;max-height:90px;overflow:auto;border:1px solid #ddd;padding:4px;border-radius:4px}
 .src{font-size:11.5px;color:#444;background:#fff;padding:8px 14px;border-radius:6px}.src code{font-size:11px}
 @media(max-width:1000px){.grid{grid-template-columns:1fr}.full{grid-column:auto}}</style><style id="sitenav-css">
-html{scroll-padding-top:76px}
-nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:center;gap:8px;padding:8px 10px;font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.35)}
-nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;border-radius:22px;white-space:nowrap;box-sizing:border-box}
-nav.topnav a.home{flex:0 0 auto;padding:0 16px;background:#ED1C24;color:#fff;font-weight:700;font-size:15px}
-nav.topnav a.home:hover{background:#c8141b}
-nav.topnav .pills{display:flex;gap:6px;flex:1 1 auto;min-width:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 28px 0 0;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}
-nav.topnav .pills::-webkit-scrollbar{display:none}
-nav.topnav .pills a{padding:0 14px;background:#2F4F86;color:#fff;border:2px solid #4A6BA6}
-nav.topnav .pills a:hover{background:#3B5F9C}
-nav.topnav .pills a[aria-current="page"]{background:#fff;color:#1F3864;font-weight:700;border-color:#ED1C24}
-.pager{display:flex;flex-wrap:wrap;gap:10px;padding:20px 24px 32px;max-width:1500px;box-sizing:border-box}
-.pager a{flex:1 1 220px;display:flex;flex-direction:column;justify-content:center;min-height:60px;padding:10px 18px;border-radius:12px;background:#1F3864;color:#fff;text-decoration:none;font-size:16px;font-weight:700;box-sizing:border-box;box-shadow:0 1px 3px rgba(0,0,0,.25)}
-.pager a small{font-weight:400;font-size:12px;opacity:.9;margin-bottom:2px}
+html{scroll-padding-top:140px}
+nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:flex-start;gap:12px;padding:12px 24px;font-family:Segoe UI,Roboto,Arial,sans-serif;font-size:16px;font-weight:700;line-height:1.2;box-shadow:0 3px 8px rgba(0,0,0,.4);border-bottom:4px solid #ED1C24}
+nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:46px;border-radius:24px;white-space:nowrap;box-sizing:border-box;font-weight:700}
+nav.topnav a.home{flex:0 0 auto;padding:0 24px;background:#ED1C24;color:#fff;font-size:18px;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35)}
+nav.topnav a.home:hover,nav.topnav a.home:focus{background:#c8141b}
+nav.topnav .pills{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 auto;min-width:0}
+nav.topnav .pills a{padding:0 18px;background:#fff;color:#1F3864;font-size:16px;border:2px solid #fff}
+nav.topnav .pills a:hover,nav.topnav .pills a:focus{background:#FFE3E4;border-color:#ED1C24;color:#1F3864;text-decoration:underline}
+nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border-color:#FFC000;box-shadow:inset 0 0 0 2px #1F3864}
+.pager{display:flex;gap:14px;padding:24px 24px 36px;max-width:1500px;box-sizing:border-box;font-family:Segoe UI,Roboto,Arial,sans-serif}
+.pager a{flex:1 1 0;display:flex;flex-direction:column;justify-content:center;min-height:68px;padding:10px 22px;border-radius:14px;background:#1F3864;color:#fff;text-decoration:none;font-size:18px;font-weight:700;box-sizing:border-box;box-shadow:0 2px 5px rgba(0,0,0,.3)}
+.pager a small{font-weight:600;font-size:14px;opacity:.95;margin-bottom:3px}
+.pager a:hover,.pager a:focus{text-decoration:underline}
 .pager a.next{background:#ED1C24;text-align:right}
-.pager a.allb{flex:0 1 auto;background:#fff;color:#1F3864;border:2px solid #1F3864;text-align:center;align-items:center}
-.wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:600;overflow-wrap:anywhere}
-.wrap a:hover{color:#ED1C24}
+.pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
+.wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
+.wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-select{max-width:100%}
-@media(max-width:600px){.flt select,.flt input{font-size:15px;min-height:40px;margin:3px 8px 3px 0}.pager{padding:16px 12px 28px}.pager a{flex-basis:100%;text-align:center!important;align-items:center}.wrap{padding-left:12px!important;padding-right:12px!important}header{padding-left:12px!important;padding-right:12px!important}}
 </style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html" aria-current="page">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Investor Class Mix – Retail, HNI, Corporates, Banks, FIIs</h1><div class="sub">Dataset: AUM – Category / Age-wise & Folio Data: investor class × category (aum_investor_class_folio) · Period: Q/E Sep-24 to Q/E Jun-26 (8 quarters) · ₹ crore unless stated (L cr = lakh crore) · Built 21-Oct-2026 11:42 IST for Hasnain, Kotak AMC</div></header>
 
@@ -104,4 +102,4 @@ opts('fc',D.cats,'Flexi Cap Fund');
 function cc(){const c=$('fc').value,x=D.C[c];mk('c5','bar',D.q,D.ic.map((i,k)=>ds(nn(i),x[i],k)),{stacked:true,fmt:'cr',title:c+' – AUM by investor class'});
  const f=D.CF[c];mk('c6','doughnut',D.ic.map(nn),[{data:D.ic.map(i=>f[i]),backgroundColor:PAL}],{noscale:true,fmt:'n',title:c+' – folios by investor class, '+D.L,mode:'nearest'});}
 $('fc').onchange=cc;cc();
-</script><div class="pager"><a class="prev" href="direct_bifurcation.html"><small>&larr; Previous</small>Direct Plans: RIA vs PMS vs DIY</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="holding_period.html"><small>Next &rarr;</small>Holding Period (Age-wise AUM)</a></div><script>(function(){var p=document.querySelector("nav.topnav .pills"),c=p&&p.querySelector("[aria-current]");if(c)p.scrollLeft=c.offsetLeft-p.offsetLeft-(p.clientWidth-c.offsetWidth)/2;})();</script></body></html>
+</script><div class="pager"><a class="prev" href="direct_bifurcation.html"><small>&larr; Previous</small>Direct Plans: RIA vs PMS vs DIY</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="holding_period.html"><small>Next &rarr;</small>Holding Period (Age-wise AUM)</a></div></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AMFI Dashboard - Sep 2026</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280"><title>AMFI Dashboard - Sep 2026</title>
 <script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
@@ -23,29 +23,25 @@
 <style>body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6fa;color:#222}header{background:#1F3864;color:#fff;padding:16px 24px}h1{margin:0;font-size:22px}h2{color:#1F3864;border-bottom:2px solid #1F3864;padding-bottom:4px}
 .wrap{padding:16px 24px}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.k{background:#fff;border-radius:8px;padding:12px;box-shadow:0 1px 3px #0002}.k .t{font-size:12px;color:#666}.k .v{font-size:22px;font-weight:700;color:#1F3864}.k .s{font-size:11px;color:#444}.k a{font-size:10px;color:#888}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#fff;border-radius:8px;padding:12px;box-shadow:0 1px 3px #0002}table{border-collapse:collapse;font-size:11px;width:100%}th{background:#1F3864;color:#fff;padding:4px}td{border-bottom:1px solid #ddd;padding:3px 5px;text-align:right}td:first-child{text-align:left}tr.hl td{background:#FFE699;font-weight:700}.note{font-size:11px;color:#555}.miss{background:#fff3f3;border-left:4px solid #c00;padding:8px 12px;font-size:12px}</style><style id="sitenav-css">
-html{scroll-padding-top:76px}
-nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:center;gap:8px;padding:8px 10px;font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.35)}
-nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;border-radius:22px;white-space:nowrap;box-sizing:border-box}
-nav.topnav a.home{flex:0 0 auto;padding:0 16px;background:#ED1C24;color:#fff;font-weight:700;font-size:15px}
-nav.topnav a.home:hover{background:#c8141b}
-nav.topnav .pills{display:flex;gap:6px;flex:1 1 auto;min-width:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:0 28px 0 0;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent)}
-nav.topnav .pills::-webkit-scrollbar{display:none}
-nav.topnav .pills a{padding:0 14px;background:#2F4F86;color:#fff;border:2px solid #4A6BA6}
-nav.topnav .pills a:hover{background:#3B5F9C}
-nav.topnav .pills a[aria-current="page"]{background:#fff;color:#1F3864;font-weight:700;border-color:#ED1C24}
-.pager{display:flex;flex-wrap:wrap;gap:10px;padding:20px 24px 32px;max-width:1500px;box-sizing:border-box}
-.pager a{flex:1 1 220px;display:flex;flex-direction:column;justify-content:center;min-height:60px;padding:10px 18px;border-radius:12px;background:#1F3864;color:#fff;text-decoration:none;font-size:16px;font-weight:700;box-sizing:border-box;box-shadow:0 1px 3px rgba(0,0,0,.25)}
-.pager a small{font-weight:400;font-size:12px;opacity:.9;margin-bottom:2px}
+html{scroll-padding-top:140px}
+nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:flex-start;gap:12px;padding:12px 24px;font-family:Segoe UI,Roboto,Arial,sans-serif;font-size:16px;font-weight:700;line-height:1.2;box-shadow:0 3px 8px rgba(0,0,0,.4);border-bottom:4px solid #ED1C24}
+nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:46px;border-radius:24px;white-space:nowrap;box-sizing:border-box;font-weight:700}
+nav.topnav a.home{flex:0 0 auto;padding:0 24px;background:#ED1C24;color:#fff;font-size:18px;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35)}
+nav.topnav a.home:hover,nav.topnav a.home:focus{background:#c8141b}
+nav.topnav .pills{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 auto;min-width:0}
+nav.topnav .pills a{padding:0 18px;background:#fff;color:#1F3864;font-size:16px;border:2px solid #fff}
+nav.topnav .pills a:hover,nav.topnav .pills a:focus{background:#FFE3E4;border-color:#ED1C24;color:#1F3864;text-decoration:underline}
+nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border-color:#FFC000;box-shadow:inset 0 0 0 2px #1F3864}
+.pager{display:flex;gap:14px;padding:24px 24px 36px;max-width:1500px;box-sizing:border-box;font-family:Segoe UI,Roboto,Arial,sans-serif}
+.pager a{flex:1 1 0;display:flex;flex-direction:column;justify-content:center;min-height:68px;padding:10px 22px;border-radius:14px;background:#1F3864;color:#fff;text-decoration:none;font-size:18px;font-weight:700;box-sizing:border-box;box-shadow:0 2px 5px rgba(0,0,0,.3)}
+.pager a small{font-weight:600;font-size:14px;opacity:.95;margin-bottom:3px}
+.pager a:hover,.pager a:focus{text-decoration:underline}
 .pager a.next{background:#ED1C24;text-align:right}
-.pager a.allb{flex:0 1 auto;background:#fff;color:#1F3864;border:2px solid #1F3864;text-align:center;align-items:center}
-.wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:600;overflow-wrap:anywhere}
-.wrap a:hover{color:#ED1C24}
+.pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
+.wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
+.wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-select{max-width:100%}
-@media(max-width:600px){.flt select,.flt input{font-size:15px;min-height:40px;margin:3px 8px 3px 0}.pager{padding:16px 12px 28px}.pager a{flex-basis:100%;text-align:center!important;align-items:center}.wrap{padding-left:12px!important;padding-right:12px!important}header{padding-left:12px!important;padding-right:12px!important}}
-</style><style id="main-mobile-css">.card{min-width:0;overflow-x:auto}.wrap .k a{font-size:12px;display:inline-block;padding:4px 0}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){header h1{font-size:19px}.k .v{font-size:19px}}</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html" aria-current="page">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
+</style><style id="main-links-css">.wrap .k a{font-size:12px}</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html" aria-current="page">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>AMFI Mutual Fund Industry Dashboard — September 2026</h1><div style="font-size:12px">Prepared 20-Oct-2026 (IST) for Hasnain | All amounts ₹ crore unless stated (L cr = lakh crore) | Real AMFI / public data only</div></header><div class="wrap">
 <div class="kpis"><div class="k"><div class="t">Industry AUM, 30-Sep-26</div><div class="v">₹82.64 L cr</div><div class="s">-5.1% MoM; Avg AUM ₹87.09 L cr</div><a href="https://www.amfiindia.com/spages/amsep2026repo.xls" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">Equity AUM (open-ended)</div><div class="v">₹37.54 L cr</div><div class="s">Net inflow ₹38,307 cr</div><a href="https://www.amfiindia.com/spages/amsep2026repo.xls" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">Overall net flow, Sep-26</div><div class="v">₹-133,376 cr</div><div class="s">Debt ₹-183,156 cr (qtr-end/advance-tax)</div><a href="https://www.amfiindia.com/spages/amsep2026repo.xls" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">SIP contribution, Sep-26</div><div class="v">₹32,490 cr</div><div class="s">SIP AUM ₹17.86 L cr (21.6% of AUM)</div><a href="https://www.amfiindia.com/uploads/AMFI_Monthly_Note_September2026_554f6604b6.pdf" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">Contributing SIP a/c</div><div class="v">10.06 crore</div><div class="s">New 63.26L vs stopped 49.68L (ratio 78.53%)</div><a href="https://economictimes.indiatimes.com/mf/analysis/sip-stoppage-ratio-falls-to-79-in-september-as-new-registrations-outpace-closures-for-fifth-straight-month/articleshow/134909225.cms" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">Total folios, 30-Sep-26</div><div class="v">28.62 crore</div><div class="s">+27.13 lakh MoM</div><a href="https://www.amfiindia.com/spages/amsep2026repo.xls" target="_blank" rel="noopener">source</a></div><div class="k"><div class="t">Kotak MF QAAUM Jul-Sep26</div><div class="v">₹6.14 L cr</div><div class="s">Rank #5, share 7.04% (QoQ +4.0%)</div><a href="amc_league.html">details: AMC league</a></div><div class="k"><div class="t">MFD workforce (Mar-26)</div><div class="v">3,41,043</div><div class="s">incl. EUIN; ARN holders ~1.99 lakh; new ARNs FY26 68,139</div><a href="https://www.amfiindia.com/uploads/AMFI_Factbook2026_14b34a6447.pdf" target="_blank" rel="noopener">source</a></div></div>
 <h2>1. Industry AUM & net flows</h2><div class="grid"><div class="card"><canvas id="c1"></canvas></div><div class="card"><canvas id="c2"></canvas></div></div>
@@ -74,4 +70,4 @@ new Chart(c7,{type:'bar',data:{labels:D.amc,datasets:[{label:'Share of QAAUM %',
 new Chart(c8,{data:{labels:D.kq,datasets:[{type:'bar',label:'Kotak QAAUM (₹ L cr)',data:D.ka},{type:'line',label:'Kotak share %',data:D.ks,yAxisID:'y1'}]},options:{...o('Kotak Mahindra MF – quarterly trend'),scales:{y1:{position:'right'}}}});
 new Chart(c9,{type:'bar',data:{labels:D.mfdx,datasets:[{label:'MFD workforce incl. EUIN (lakh, Mar)',data:D.mfdy}]},options:o('Distributor workforce (AMFI Factbook 2026)')});
 new Chart(c10,{type:'bar',data:{labels:D.arnfy,datasets:[{label:'New ARN registrations',data:D.arnt}]},options:o('New ARN registrations by FY (AMFI via Cafemutual)')});
-</script><div class="pager"><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="amc_league.html"><small>Next &rarr;</small>AMC League Table</a></div><script>(function(){var p=document.querySelector("nav.topnav .pills"),c=p&&p.querySelector("[aria-current]");if(c)p.scrollLeft=c.offsetLeft-p.offsetLeft-(p.clientWidth-c.offsetWidth)/2;})();</script></body></html>
+</script><div class="pager"><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="amc_league.html"><small>Next &rarr;</small>AMC League Table</a></div></body></html>
