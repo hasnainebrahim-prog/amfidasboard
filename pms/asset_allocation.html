@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
+<title>SEBI asset allocation</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f4f6fa;color:#222;line-height:1.45;min-width:1200px}
+header.page{background:#1F3864;color:#fff;padding:16px 24px;border-bottom:5px solid #ED1C24}
+header.page h1{margin:0;font-size:22px}
+header.page .sub{margin-top:4px;font-size:13px;opacity:.92}
+.wrap{padding:16px 24px 28px;max-width:1400px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.k{background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px #0002;border-left:5px solid #ED1C24}
+.k .t{font-size:12px;color:#666}
+.k .v{font-size:22px;font-weight:700;color:#1F3864;margin:4px 0}
+.k .s{font-size:11.5px;color:#444}
+.k .src{font-size:10px;color:#888;margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 3px #0002;margin-bottom:14px}
+.card h2{margin:0 0 10px;font-size:17px;color:#1F3864;border-bottom:2px solid #1F3864;padding-bottom:4px}
+.card img{max-width:100%;height:auto;display:block}
+table{border-collapse:collapse;font-size:12px;width:100%}
+th{background:#1F3864;color:#fff;padding:6px 7px;text-align:right}
+th:first-child{text-align:left}
+td{border-bottom:1px solid #ddd;padding:5px 7px;text-align:right}
+td:first-child{text-align:left}
+tr.hl td{background:#FFE699;font-weight:700}
+tr:hover td{background:#f5f8ff}
+.note{font-size:12px;color:#555;margin:8px 0}
+.miss{background:#fff8e8;border-left:4px solid #FFC000;padding:10px 12px;font-size:12.5px;margin:12px 0;border-radius:6px}
+.take{background:#eef7f7;border-left:4px solid #00A3A1;padding:10px 12px;font-size:13px;margin:12px 0;border-radius:6px}
+.take b{color:#1F3864}
+footer{font-size:12px;color:#666;text-align:center;padding:8px 16px 28px}
+a{color:#0B5CAD;font-weight:700}
+html{scroll-padding-top:140px}
+nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:flex-start;gap:12px;padding:12px 24px;font-size:16px;font-weight:700;line-height:1.2;box-shadow:0 3px 8px rgba(0,0,0,.4);border-bottom:4px solid #ED1C24}
+nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:46px;border-radius:24px;white-space:nowrap;box-sizing:border-box;font-weight:700}
+nav.topnav a.home{flex:0 0 auto;padding:0 24px;background:#ED1C24;color:#fff;font-size:18px;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35)}
+nav.topnav a.home:hover{background:#c8141b}
+nav.topnav .pills{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 auto;min-width:0}
+nav.topnav .pills a{padding:0 18px;background:#fff;color:#1F3864;font-size:15px;border:2px solid #fff}
+nav.topnav .pills a:hover{background:#FFE3E4;border-color:#ED1C24}
+nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border-color:#FFC000;box-shadow:inset 0 0 0 2px #1F3864}
+.pager{display:flex;gap:14px;padding:18px 24px 36px;max-width:1400px;box-sizing:border-box}
+.pager a{flex:1 1 0;display:flex;flex-direction:column;justify-content:center;min-height:64px;padding:10px 22px;border-radius:14px;background:#1F3864;color:#fff;text-decoration:none;font-size:17px;font-weight:700;box-shadow:0 2px 5px rgba(0,0,0,.3)}
+.pager a small{font-weight:600;font-size:13px;opacity:.95;margin-bottom:3px}
+.pager a.next{background:#ED1C24;text-align:right}
+.pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
+</style></head><body>
+<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html">Overview</a><a href="segments.html">Segments</a><a href="asset_allocation.html" aria-current="page">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="sources.html">Sources</a></div></nav>
+<header class="page"><h1>SEBI asset allocation</h1><div class="sub">Report of Portfolio Managers · as on 30-Sep-2026</div></header>
+<div class="wrap">
+
+<div class="kpis">
+  <div class="k"><div class="t">Grand total AUM</div><div class="v">₹44.46 L cr</div>
+  <div class="s">526 PMS reported (SI Portal to 31-Oct-2026)</div>
+  <div class="src">SEBI · 30-Sep-2026</div></div>
+  <div class="k"><div class="t">Listed equity (disc + ND)</div><div class="v">₹4.47 L cr</div>
+  <div class="s">Disc listed equity fell vs Aug (₹4.04 L cr)</div>
+  <div class="src">SEBI Sep vs Aug 2026</div></div>
+  <div class="k"><div class="t">Plain debt listed (disc)</div><div class="v">₹27.14 L cr</div>
+  <div class="s">Dominant share of discretionary book (EPFO-heavy)</div>
+  <div class="src">SEBI · 30-Sep-2026</div></div>
+  <div class="k"><div class="t">Mutual funds in PMS</div><div class="v">₹1.86 L cr</div>
+  <div class="s">Disc ₹1.09 L cr · ND ₹77,112 cr</div>
+  <div class="src">SEBI · 30-Sep-2026</div></div>
+</div>
+<div class="take"><b>EPFO note:</b> Of total AUM, <b>₹32.12 L cr</b> is contributed by EPFO/PF funds
+(72.2%). Non-EPFO/PF AUM is <b>₹9.05 L cr</b>.
+MoM, non-EPFO AUM fell from ₹9.19 L cr in Aug to ₹9.05 L cr in Sep (market + flows).</div>
+<div class="grid">
+  <div class="card"><h2>Discretionary asset-class mix</h2><img src="charts/sebi_disc_asset_mix.png" alt="SEBI discretionary asset mix">
+  <p class="note">Source: <a href="https://www.sebi.gov.in/statistics/assets-managed/archive-month/sep-2026.html" target="_blank" rel="noopener">SEBI Report of Portfolio Managers – 30-Sep-2026</a>.</p></div>
+  <div class="card"><h2>EPFO/PF vs other</h2><img src="charts/epfo_vs_non.png" alt="EPFO vs non">
+  <p class="note">Source: same SEBI report, EPFO/PF bifurcation table.</p></div>
+</div>
+<div class="card"><h2>Asset-class AUM (₹ cr) – 30-Sep-2026</h2>
+<table><tr><th>Asset class</th><th>Discretionary</th><th>Non-discretionary</th><th>Co-investment</th><th>Advisory**</th></tr>
+<tr><td>Listed Equity</td><td>394,254</td><td>52,372</td><td>0</td><td>322,823</td></tr><tr><td>Unlisted Equity</td><td>972</td><td>25</td><td>3,078</td><td>—</td></tr><tr><td>Plain Debt Listed</td><td>2,713,542</td><td>213,669</td><td>0</td><td>—</td></tr><tr><td>Plain Debt Unlisted</td><td>512,624</td><td>317</td><td>2,184</td><td>—</td></tr><tr><td>Structured Debt Listed</td><td>7,361</td><td>117</td><td>0</td><td>—</td></tr><tr><td>Structured Debt Unlisted</td><td>3,849</td><td>191</td><td>548</td><td>—</td></tr><tr><td>Derivatives – Equity</td><td>259</td><td>0</td><td>0</td><td>—</td></tr><tr><td>Derivatives – Others</td><td>20</td><td>0</td><td>0</td><td>—</td></tr><tr><td>Mutual Funds</td><td>108,967</td><td>77,112</td><td>0</td><td>—</td></tr><tr><td>Others</td><td>21,241</td><td>9,707</td><td>1,066</td><td>—</td></tr>
+<tr class="hl"><td>Total / Grand</td><td>3,763,090</td>
+<td>353,509</td><td>6,875</td>
+<td>see listed equity / note</td></tr></table>
+<p class="note">** Value of assets for which advisory services are being given. Advisory column populated for Listed Equity in SEBI table (₹322,823 cr). Derivatives–Commodity was nil.</p></div>
+
+</div>
+<div class="pager"><a href="segments.html"><small>Previous</small>Segments</a><a class="allb" href="index.html">All</a><a class="next" href="league.html"><small>Next</small>League table</a></div>
+<footer>Built 20-Nov-2026 09:46 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
+</body></html>

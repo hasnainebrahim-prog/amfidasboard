@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
+<title>Service-type segments</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f4f6fa;color:#222;line-height:1.45;min-width:1200px}
+header.page{background:#1F3864;color:#fff;padding:16px 24px;border-bottom:5px solid #ED1C24}
+header.page h1{margin:0;font-size:22px}
+header.page .sub{margin-top:4px;font-size:13px;opacity:.92}
+.wrap{padding:16px 24px 28px;max-width:1400px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.k{background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px #0002;border-left:5px solid #ED1C24}
+.k .t{font-size:12px;color:#666}
+.k .v{font-size:22px;font-weight:700;color:#1F3864;margin:4px 0}
+.k .s{font-size:11.5px;color:#444}
+.k .src{font-size:10px;color:#888;margin-top:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.card{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 3px #0002;margin-bottom:14px}
+.card h2{margin:0 0 10px;font-size:17px;color:#1F3864;border-bottom:2px solid #1F3864;padding-bottom:4px}
+.card img{max-width:100%;height:auto;display:block}
+table{border-collapse:collapse;font-size:12px;width:100%}
+th{background:#1F3864;color:#fff;padding:6px 7px;text-align:right}
+th:first-child{text-align:left}
+td{border-bottom:1px solid #ddd;padding:5px 7px;text-align:right}
+td:first-child{text-align:left}
+tr.hl td{background:#FFE699;font-weight:700}
+tr:hover td{background:#f5f8ff}
+.note{font-size:12px;color:#555;margin:8px 0}
+.miss{background:#fff8e8;border-left:4px solid #FFC000;padding:10px 12px;font-size:12.5px;margin:12px 0;border-radius:6px}
+.take{background:#eef7f7;border-left:4px solid #00A3A1;padding:10px 12px;font-size:13px;margin:12px 0;border-radius:6px}
+.take b{color:#1F3864}
+footer{font-size:12px;color:#666;text-align:center;padding:8px 16px 28px}
+a{color:#0B5CAD;font-weight:700}
+html{scroll-padding-top:140px}
+nav.topnav{position:sticky;top:0;z-index:1000;background:#1F3864;display:flex;align-items:flex-start;gap:12px;padding:12px 24px;font-size:16px;font-weight:700;line-height:1.2;box-shadow:0 3px 8px rgba(0,0,0,.4);border-bottom:4px solid #ED1C24}
+nav.topnav a{margin:0;text-decoration:none;display:inline-flex;align-items:center;min-height:46px;border-radius:24px;white-space:nowrap;box-sizing:border-box;font-weight:700}
+nav.topnav a.home{flex:0 0 auto;padding:0 24px;background:#ED1C24;color:#fff;font-size:18px;border:2px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.35)}
+nav.topnav a.home:hover{background:#c8141b}
+nav.topnav .pills{display:flex;flex-wrap:wrap;gap:8px;flex:1 1 auto;min-width:0}
+nav.topnav .pills a{padding:0 18px;background:#fff;color:#1F3864;font-size:15px;border:2px solid #fff}
+nav.topnav .pills a:hover{background:#FFE3E4;border-color:#ED1C24}
+nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border-color:#FFC000;box-shadow:inset 0 0 0 2px #1F3864}
+.pager{display:flex;gap:14px;padding:18px 24px 36px;max-width:1400px;box-sizing:border-box}
+.pager a{flex:1 1 0;display:flex;flex-direction:column;justify-content:center;min-height:64px;padding:10px 22px;border-radius:14px;background:#1F3864;color:#fff;text-decoration:none;font-size:17px;font-weight:700;box-shadow:0 2px 5px rgba(0,0,0,.3)}
+.pager a small{font-weight:600;font-size:13px;opacity:.95;margin-bottom:3px}
+.pager a.next{background:#ED1C24;text-align:right}
+.pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
+</style></head><body>
+<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html">Overview</a><a href="segments.html" aria-current="page">Segments</a><a href="asset_allocation.html">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="sources.html">Sources</a></div></nav>
+<header class="page"><h1>Service-type segments</h1><div class="sub">Discretionary, non-discretionary, co-investment, advisory</div></header>
+<div class="wrap">
+
+<div class="kpis">
+  <div class="k"><div class="t">Discretionary</div><div class="v">₹37.63 L cr</div>
+  <div class="s">218,514 clients · 84.6% AUM</div>
+  <div class="src">APMI · Sep-26</div></div>
+  <div class="k"><div class="t">Non-discretionary</div><div class="v">₹3.54 L cr</div>
+  <div class="s">8,249 clients · 8.0% AUM</div>
+  <div class="src">APMI · Sep-26</div></div>
+  <div class="k"><div class="t">Co-investment</div><div class="v">₹6,875 cr</div>
+  <div class="s">774 clients</div>
+  <div class="src">APMI · Sep-26</div></div>
+  <div class="k"><div class="t">Advisory</div><div class="v">₹3.23 L cr</div>
+  <div class="s">1,381 clients · assets under advisory</div>
+  <div class="src">APMI · Sep-26 · SEBI note 1</div></div>
+</div>
+<div class="grid">
+  <div class="card"><h2>AUM by service type</h2><img src="charts/aum_by_segment.png" alt="AUM by segment">
+  <p class="note">Source: APMI PMS Industry AUM PDF. Discretionary includes EPFO/PF funds (SEBI footnote).</p></div>
+  <div class="card"><h2>Clients by service type</h2><img src="charts/clients_by_segment.png" alt="Clients by segment">
+  <p class="note">Co-investment client counts are small and omitted from the line chart for scale; see table.</p></div>
+</div>
+<div class="card"><h2>Sep-2026 mix</h2>
+<table><tr><th>Segment</th><th>Clients</th><th>% clients</th><th>AUM ₹ cr</th><th>% AUM</th></tr><tr><td>Discretionary</td><td>218,514</td><td>95.46%</td><td>3,763,090</td><td>84.63%</td></tr><tr><td>Non-discretionary</td><td>8,249</td><td>3.60%</td><td>353,509</td><td>7.95%</td></tr><tr><td>Co-investment</td><td>774</td><td>0.34%</td><td>6,875</td><td>0.15%</td></tr><tr><td>Advisory</td><td>1,381</td><td>0.60%</td><td>322,823</td><td>7.26%</td></tr><tr class="hl"><td>Total</td><td>228,918</td><td>100%</td>
+<td>4,446,297</td><td>100%</td></tr></table>
+<p class="note">Source: APMI · month ended Sep-2026.</p></div>
+
+</div>
+<div class="pager"><a href="overview.html"><small>Previous</small>Overview</a><a class="allb" href="index.html">All</a><a class="next" href="asset_allocation.html"><small>Next</small>Asset mix</a></div>
+<footer>Built 20-Nov-2026 09:46 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
+</body></html>
