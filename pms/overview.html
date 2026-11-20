@@ -47,7 +47,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .pager a.next{background:#ED1C24;text-align:right}
 .pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
 </style></head><body>
-<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html" aria-current="page">Overview</a><a href="segments.html">Segments</a><a href="asset_allocation.html">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="sources.html">Sources</a></div></nav>
+<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html" aria-current="page">Overview</a><a href="segments.html">Segments</a><a href="asset_allocation.html">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="peers.html">Peer set</a><a href="sources.html">Sources</a></div></nav>
 <header class="page"><h1>PMS industry overview – AUM & clients</h1><div class="sub">APMI monthly series through Sep-2026 · MoM/YoY changes derived from month-end AUM</div></header>
 <div class="wrap">
 
@@ -67,7 +67,9 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 </div>
 <div class="take"><b>Takeaways (Sep vs Aug 2026):</b> Total AUM rose ₹11,704 cr MoM to a record ₹44.46 L cr.
 Client accounts rose 3,085. SEBI notes 526 PMS reported for Sep-26.
-AUM changes mix net flows and mark-to-market — APMI/SEBI do not publish a separate industry net-flow series in these files.</div>
+AUM changes mix net flows and mark-to-market; actual net flows from APMI's compendium are in section 4.</div>
+<div class="miss"><b>October 2026 check (20-Nov-2026):</b> APMI's industry AUM PDF still ends at Sep-26, SEBI's latest Portfolio Managers report is as on 30-Sep-2026 (the oct-2026 page returns 404), and APMI's latest compendium is September 2026.
+APMI's strategy-level data <b>is</b> out for October: investment approaches reporting performance held ₹5.85 L cr at Oct-26, vs ₹5.88 L cr at Sep-26 (-0.43%). That covers only strategy books, not the ₹44 L cr industry total, which includes EPFO/PF and advisory.</div>
 <div class="grid">
   <div class="card"><h2>1. Industry AUM trend</h2><img src="charts/industry_aum_trend.png" alt="Industry AUM trend">
   <p class="note">Source: <a href="https://apmiindia.org/storagebox/images/Important/PMS%20Industry%20Aum_1.pdf" target="_blank" rel="noopener">APMI PMS Industry AUM PDF</a> (SEBI underlying). Series from Dec-2010; chart shows Jan-2023 onward.</p></div>
@@ -78,8 +80,13 @@ AUM changes mix net flows and mark-to-market — APMI/SEBI do not publish a sepa
 <table><tr><th>Month</th><th>Total AUM ₹ cr</th><th>MoM Δ ₹ cr</th><th>YoY Δ ₹ cr</th><th>Clients</th><th>MoM clients</th><th>Disc AUM</th><th>Advisory AUM</th></tr>
 <tr><td>Sep-26</td><td>4,446,297</td><td>11,704</td><td>414,218</td><td>228,918</td><td>+3,085</td><td>3,763,090</td><td>322,823</td></tr><tr><td>Aug-26</td><td>4,434,593</td><td>23,771</td><td>438,636</td><td>225,833</td><td>+2,554</td><td>3,755,457</td><td>317,477</td></tr><tr><td>Jul-26</td><td>4,410,822</td><td>84,796</td><td>435,293</td><td>223,279</td><td>+2,835</td><td>3,736,925</td><td>314,662</td></tr><tr><td>Jun-26</td><td>4,326,026</td><td>64,330</td><td>393,266</td><td>220,444</td><td>+1,281</td><td>3,671,898</td><td>305,531</td></tr><tr><td>May-26</td><td>4,261,696</td><td>25,230</td><td>395,934</td><td>219,163</td><td>+1,696</td><td>3,617,878</td><td>301,650</td></tr><tr><td>Apr-26</td><td>4,236,466</td><td>94,748</td><td>427,251</td><td>217,467</td><td>+1,755</td><td>3,594,960</td><td>303,035</td></tr><tr><td>Mar-26</td><td>4,141,718</td><td>-60,329</td><td>361,619</td><td>215,712</td><td>-1,276</td><td>3,510,234</td><td>305,562</td></tr><tr><td>Feb-26</td><td>4,202,047</td><td>45,871</td><td>498,043</td><td>216,988</td><td>+1,764</td><td>3,544,783</td><td>323,165</td></tr><tr><td>Jan-26</td><td>4,156,176</td><td>-2,517</td><td>438,510</td><td>215,224</td><td>+1,533</td><td>3,512,035</td><td>314,457</td></tr><tr><td>Dec-25</td><td>4,158,693</td><td>50,582</td><td>452,501</td><td>213,691</td><td>+2,195</td><td>3,496,947</td><td>333,706</td></tr><tr><td>Nov-25</td><td>4,108,111</td><td>23,813</td><td>443,331</td><td>211,496</td><td>-282</td><td>3,443,597</td><td>343,274</td></tr><tr><td>Oct-25</td><td>4,084,298</td><td>52,219</td><td>461,191</td><td>211,778</td><td>+1,240</td><td>3,419,490</td><td>344,255</td></tr><tr><td>Sep-25</td><td>4,032,079</td><td>36,122</td><td>404,393</td><td>210,538</td><td>+2,878</td><td>3,369,457</td><td>346,212</td></tr></table>
 <p class="note">Source: APMI PMS Industry AUM · as on month-end. Advisory AUM is value of assets under advisory (SEBI note).</p></div>
+<div class="card"><h2>4. Net flows – APMI Industry Compendium (Sep-2026)</h2>
+<table><tr><th>Month</th><th>Discretionary net ₹ cr</th><th>Disc. ex-EPFO net ₹ cr</th><th>Non-disc. net ₹ cr</th><th>Total (D+ND) inflows</th><th>Total outflows</th><th>Total net ₹ cr</th></tr>
+<tr><td>Jul-26</td><td>462,437</td><td>-3,180</td><td>3,797</td><td>691,366</td><td>225,132</td><td>466,234</td></tr><tr><td>Aug-26</td><td>1,766</td><td>1,684</td><td>762</td><td>40,973</td><td>38,445</td><td>2,528</td></tr><tr><td>Sep-26</td><td>7,274</td><td>3,224</td><td>1,649</td><td>42,358</td><td>33,434</td><td>8,924</td></tr>
+<tr class="hl"><td>FY27 to date</td><td>851,865</td><td>4,856</td><td>18,533</td><td>—</td><td>—</td><td>870,398</td></tr></table>
+<p class="note">Source: <a href="https://apmiindia.org/apmi/industryCompendium.htm?action=downloadseptember2026compendium" target="_blank" rel="noopener">APMI PMS Industry Compendium September'26</a>, Capital Flow Momentum. Ex-EPFO excludes SBI, UTI, Aditya Birla Sun Life AMC and HDFC AMC. The July spike reflects EPFO-linked mandates. The October compendium is not yet published.</p></div>
 
 </div>
 <div class="pager"><span></span><a class="allb" href="index.html">All</a><a class="next" href="segments.html"><small>Next</small>Segments</a></div>
-<footer>Built 20-Nov-2026 09:46 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
+<footer>Built 20-Nov-2026 11:34 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
 </body></html>
