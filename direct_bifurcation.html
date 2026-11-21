@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
-<title>Direct Plans – RIA vs PMS vs Do-it-yourself – AMFI dashboards</title><script>/**
+<title>MF &amp; PMS Industry Dashboard — Direct Plans – RIA vs PMS vs Do-it-yourself</title><script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
  *
@@ -51,7 +51,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
 .wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html" aria-current="page">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
+</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html" aria-current="page">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Direct Plans – RIA vs PMS vs Do-it-yourself</h1><div class="sub">Dataset: Bifurcation of AUM under Direct Plan (bifurcation_aaum_direct_plan) · Period: Jan-24 to Oct-26 (34 months, AMFI's full history) · ₹ crore unless stated (L cr = lakh crore) · Built 16-Nov-2026 16:02 IST for Hasnain, Kotak AMC</div></header>
 
 <div class="wrap"><div class="what"><b>What this shows.</b> Direct-plan average AUM split by how it was sourced: through SEBI-registered investment advisers (RIA), through portfolio managers (PMS), or by investors on their own (DIY). The fourth chart adds direct's share of industry AAUM from the classified data. Use the From/To selectors to re-base the growth index.</div>
@@ -100,4 +100,4 @@ function go(){const a=D.m.indexOf($('f0').value),b=D.m.indexOf($('f1').value)+1,
  mk('c3','line',m,[ds('RIA',idx('ria'),3,{line:1}),ds('PMS',idx('pms'),5,{line:1}),ds('DIY',idx('diy'),1,{line:1}),ds('Total direct',idx('tot'),0,{line:1,borderWidth:3})],{fmt:'n',zero:false,title:'Growth index ('+m[0]+' = 100)'});
  mk('c4','line',m,[ds('Direct share of industry AAUM (classified)',S(D.cd).map((v,i)=>v==null?null:v/S(D.ind)[i]),1,{line:1,borderWidth:3,spanGaps:true})],{fmt:'pct',zero:false,title:'Direct share of industry AAUM (Jul-25 onward, classified data)'});}
 $('f0').onchange=go;$('f1').onchange=go;go();
-</script><div class="pager"><a class="prev" href="state_aaum.html"><small>&larr; Previous</small>State-wise Average AUM</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="investor_class.html"><small>Next &rarr;</small>Investor Class Mix</a></div></body></html>
+</script><div class="pager"><a class="prev" href="state_aaum.html"><small>&larr; Previous</small>State-wise Average AUM</a><a class="allb" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><a class="next" href="investor_class.html"><small>Next &rarr;</small>Investor Class Mix</a></div></body></html>

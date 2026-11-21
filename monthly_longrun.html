@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
-<title>Industry Long Run – 32 Months of AUM, Flows & Folios – AMFI dashboards</title><script>/**
+<title>MF &amp; PMS Industry Dashboard — Industry Long Run – 32 Months of AUM, Flows & Folios</title><script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
  *
@@ -51,7 +51,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
 .wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html" aria-current="page">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
+</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html" aria-current="page">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Industry Long Run – 32 Months of AUM, Flows & Folios</h1><div class="sub">Dataset: AMFI Monthly Reports (amfi_monthly_report) · Period: Mar-24 to Oct-26 (32 months) · ₹ crore unless stated (L cr = lakh crore) · Built 16-Nov-2026 16:02 IST for Hasnain, Kotak AMC</div></header>
 
 <div class="wrap"><div class="what"><b>What this shows.</b> 32 months of AMFI monthly reports rolled up to asset classes: AUM, average AUM, gross sales, redemptions, net flows, folios and scheme counts. Pick a metric, an asset class and a start month. The main dashboard covers the latest 13 months at total level; this page extends the history and adds the asset-class filter.</div>
@@ -105,4 +105,4 @@ function go(){const k=$('fk').value,g=$('fg').value,a=D.m.indexOf($('f0').value)
  const rows=m.map((mm,i)=>({m:mm,aum:S(D.T.aum)[i],avg:S(D.T.avg)[i],nf:S(D.T.nf)[i],eqnf:S(D.G.nf['Equity'])[i],mob:S(D.T.mob)[i],red:S(D.T.red)[i],fol:S(D.T.fol)[i]})).reverse();
  table('t1',[{h:'Month',k:'m'},{h:'AUM ₹ cr',k:'aum',f:'n'},{h:'Avg AUM ₹ cr',k:'avg',f:'n'},{h:'Net inflow ₹ cr',k:'nf',f:'n',sign:1},{h:'Equity net inflow ₹ cr',k:'eqnf',f:'n',sign:1},{h:'Mobilised ₹ cr',k:'mob',f:'n'},{h:'Redeemed ₹ cr',k:'red',f:'n'},{h:'Folios',k:'fol',f:'n'}],rows);}
 ['fk','fg','f0'].forEach(i=>$(i).onchange=go);go();
-</script><div class="pager"><a class="prev" href="category_aum.html"><small>&larr; Previous</small>Category-wise AUM &amp; Average AUM</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="nfo_quarterly.html"><small>Next &rarr;</small>New Fund Offers &amp; Quarterly Flows</a></div></body></html>
+</script><div class="pager"><a class="prev" href="category_aum.html"><small>&larr; Previous</small>Category-wise AUM &amp; Average AUM</a><a class="allb" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><a class="next" href="nfo_quarterly.html"><small>Next &rarr;</small>New Fund Offers &amp; Quarterly Flows</a></div></body></html>

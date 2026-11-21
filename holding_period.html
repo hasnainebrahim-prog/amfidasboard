@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
-<title>Holding Period – How Long Money Stays (Age-wise AUM) – AMFI dashboards</title><script>/**
+<title>MF &amp; PMS Industry Dashboard — Holding Period – How Long Money Stays (Age-wise AUM)</title><script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
  *
@@ -51,7 +51,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
 .wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html" aria-current="page">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
+</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html" aria-current="page">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Holding Period – How Long Money Stays (Age-wise AUM)</h1><div class="sub">Dataset: AUM – Category / Age-wise & Folio Data: age-wise AUM (aum_agewise) · Period: Q/E Sep-24 to Q/E Jun-26 (8 quarters) · ₹ crore unless stated (L cr = lakh crore) · Built 16-Nov-2026 16:02 IST for Hasnain, Kotak AMC</div></header>
 
 <div class="wrap"><div class="what"><b>What this shows.</b> AUM bucketed by how long it has been invested (0–1 month up to more than 24 months), for equity and non-equity schemes and for each investor class. It shows how sticky equity money is and how retail compares with HNI and corporates. Switch between % and ₹ crore.</div>
@@ -100,4 +100,4 @@ function go(){const at=$('fa').value,q=$('fq').value,v=$('fv').value,src=v=='pct
 ['fa','fq','fv'].forEach(i=>$(i).onchange=go);go();
 mk('c3','line',D.q,D.cls.map((c,k)=>ds(c,D.g24[c],k,{line:1,borderWidth:c=='Total'?4:2})),{fmt:'pct',zero:false,title:'Equity AUM held > 24 months (% of class)'});
 mk('c4','line',D.q,D.cls.map((c,k)=>ds(c,D.lt1y[c],k,{line:1,borderWidth:c=='Total'?4:2})),{fmt:'pct',zero:false,title:'Equity AUM held < 12 months (% of class)'});
-</script><div class="pager"><a class="prev" href="investor_class.html"><small>&larr; Previous</small>Investor Class Mix</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="geography.html"><small>Next &rarr;</small>Geography: City-wise AUM</a></div></body></html>
+</script><div class="pager"><a class="prev" href="investor_class.html"><small>&larr; Previous</small>Investor Class Mix</a><a class="allb" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><a class="next" href="geography.html"><small>Next &rarr;</small>Geography: City-wise AUM</a></div></body></html>

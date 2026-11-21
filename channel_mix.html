@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280">
-<title>Channel Mix – Direct vs Associate vs Non-associate Distributors, T30/B30, Investor Class – AMFI dashboards</title><script>/**
+<title>MF &amp; PMS Industry Dashboard — Channel Mix – Direct vs Associate vs Non-associate Distributors, T30/B30, Investor Class</title><script>/**
  * Skipped minification because the original files appears to be already minified.
  * Original file: /npm/chart.js@4.4.1/dist/chart.umd.js
  *
@@ -51,7 +51,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .wrap a{color:#0B5CAD;text-decoration:underline;text-underline-offset:2px;font-weight:700;overflow-wrap:anywhere}
 .wrap a:hover,.wrap a:focus{color:#ED1C24}
 .wrap a[href^="http"]::after{content:"\00a0\2197";display:inline-block;text-decoration:none;font-size:.9em}
-</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; All dashboards</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html" aria-current="page">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
+</style></head><body><nav class="topnav" aria-label="Dashboards"><a class="home" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><div class="pills"><a href="main_dashboard.html">Main dashboard</a><a href="amc_league.html">AMC league</a><a href="scheme_aaum.html">Scheme AAUM</a><a href="channel_mix.html" aria-current="page">Channel mix</a><a href="state_aaum.html">States</a><a href="direct_bifurcation.html">Direct plans</a><a href="investor_class.html">Investor class</a><a href="holding_period.html">Holding period</a><a href="geography.html">Cities</a><a href="category_aum.html">Categories</a><a href="monthly_longrun.html">Long run</a><a href="nfo_quarterly.html">NFOs</a></div></nav>
 <header><h1>Channel Mix – Direct vs Associate vs Non-associate Distributors, T30/B30, Investor Class</h1><div class="sub">Dataset: Classified Average AUM – Scheme Category-wise, All MFs (classified_aaum_scheme_categorywise) · Period: Jul-25 to Sep-26 (15 months, monthly) · ₹ crore unless stated (L cr = lakh crore) · Built 16-Nov-2026 16:02 IST for Hasnain, Kotak AMC</div></header>
 
 <div class="wrap"><div class="what"><b>What this shows.</b> Monthly average AUM for all mutual funds split by channel: direct plans, associate distributors (the sponsor's group, e.g. bank-owned distributors) and non-associate distributors. Each channel is also split by city tier (top 30 / beyond 30) and investor class, and by scheme category. This is the core view of where distributor money sits.</div>
@@ -111,4 +111,4 @@ function ct(){const r=D.cats[$('fm2').value].map(x=>Object.assign({ds:x.d/x.t,as
  mk('c7','bar',r.map(x=>x.c),[ds('Direct',r.map(x=>x.ds),1),ds('Associate',r.map(x=>x.as),3),ds('Non-associate',r.map(x=>x.ns),0)],{stacked:true,fmt:'pct',max:1,title:'Channel mix by category – '+$('fm2').value});
  table('t1',[{h:'Category / line',k:'c'},{h:'Group',k:'g'},{h:'AAUM ₹ cr',k:'t',f:'n'},{h:'Direct ₹ cr',k:'d',f:'n'},{h:'Associate ₹ cr',k:'a',f:'n'},{h:'Non-assoc ₹ cr',k:'n',f:'n'},{h:'Direct %',k:'ds',f:'pct'}],r.slice().sort((a,b)=>b.t-a.t));}
 $('fm').onchange=iv;$('fm2').onchange=ct;iv();ct();
-</script><div class="pager"><a class="prev" href="scheme_aaum.html"><small>&larr; Previous</small>Scheme-wise Average AUM</a><a class="allb" href="index.html">&#8962; All dashboards</a><a class="next" href="state_aaum.html"><small>Next &rarr;</small>State-wise Average AUM</a></div></body></html>
+</script><div class="pager"><a class="prev" href="scheme_aaum.html"><small>&larr; Previous</small>Scheme-wise Average AUM</a><a class="allb" href="index.html">&#8962; MF &amp; PMS Industry Dashboard</a><a class="next" href="state_aaum.html"><small>Next &rarr;</small>State-wise Average AUM</a></div></body></html>
