@@ -47,7 +47,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 .pager a.next{background:#ED1C24;text-align:right}
 .pager a.allb{flex:0 0 auto;background:#fff;color:#1F3864;border:3px solid #1F3864;text-align:center;align-items:center}
 </style></head><body>
-<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html">Overview</a><a href="segments.html">Segments</a><a href="asset_allocation.html">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="peers.html">Peer set</a><a href="sources.html" aria-current="page">Sources</a></div></nav>
+<nav class="topnav" aria-label="Dashboard sections"><a class="home" href="index.html">All dashboards</a><div class="pills"><a href="overview.html">Overview</a><a href="segments.html">Segments</a><a href="asset_allocation.html">Asset mix</a><a href="league.html">League table</a><a href="kotak.html">Kotak PMS</a><a href="peers.html">Peer set</a><a href="level_playing_field.html">Level field</a><a href="sources.html" aria-current="page">Sources</a></div></nav>
 <header class="page"><h1>Sources & methodology</h1><div class="sub">APMI · SEBI · KMAMC disclosures</div></header>
 <div class="wrap">
 
@@ -67,7 +67,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 <td>League table, Kotak firm totals, peer set (aggregate)</td></tr>
 <tr><td>APMI IA Performance (all IAs, all categories)</td><td>31-Oct-2026</td>
 <td><a href="https://apmiindia.org/apmi/welcomeiaperformance.htm?action=PMSmenu" target="_blank" rel="noopener">IA Performance</a> (POST loadIAReport, per strategy × service × benchmark)</td>
-<td>Kotak strategy AUM &amp; TWRR; category peer ranks (1851 IA rows)</td></tr>
+<td>Kotak strategy AUM &amp; TWRR; category peer ranks; level-playing-field comparison (1851 IA rows)</td></tr>
 <tr><td>APMI Insights</td><td>Oct-2026</td>
 <td><a href="https://insights.apmiindia.org/dashboard" target="_blank" rel="noopener">insights.apmiindia.org</a> (public, no login)</td>
 <td>PMS provider strategy AUM &amp; IA counts, benchmark returns, inception dates, IA-level AUM trend</td></tr>
@@ -85,6 +85,7 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 <li>APMI industry series footnotes: (1) Discretionary includes EPFO/PF; (2) Advisory is value of assets under advisory.</li>
 <li>Desktop layout (viewport width 1280) to match the AMFI dashboard set.</li>
 <li>Strategy performance: the full APMI IA performance table is pulled per strategy type, service type and benchmark (research/scrape_ia_perf.py); APMI Insights data via research/fetch_insights.py. Peer categories follow APMI's grouping (strategy type + service type + benchmark).</li>
+<li>Level playing field: each Kotak IA is compared only with peers in that same APMI group who report a 3-year TWRR and have AUM ≥ ₹250 cr. A Kotak IA that fails a filter is still shown, with a note. Customised variants are not merged. APMI has only four broad categories; the official benchmark is used as a style proxy. Excess return is omitted because the IA performance table does not include benchmark index returns. Risk measures (volatility, drawdown, Sharpe) are omitted because APMI does not publish them. A figure of 0.00 is treated as not reported.</li>
 <li>Peer brand roll-ups sum all registered APMI entities of a group (e.g. 360 ONE's three PMS entities).</li>
 </ul></div>
 <div class="card"><h2>Local research files</h2>
@@ -92,6 +93,6 @@ nav.topnav .pills a[aria-current="page"]{background:#FFC000;color:#1F3864;border
 <div class="card"><h2>Published</h2><p class="note">Live at <a href="https://hasnainebrahim-prog.github.io/amfidasboard/pms/">hasnainebrahim-prog.github.io/amfidasboard/pms/</a> (GitHub Pages, same repo as the AMFI set).</p></div>
 
 </div>
-<div class="pager"><a href="peers.html"><small>Previous</small>Peer set</a><a class="allb" href="index.html">All</a><span></span></div>
-<footer>Built 20-Nov-2026 11:34 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
+<div class="pager"><a href="level_playing_field.html"><small>Previous</small>Level field</a><a class="allb" href="index.html">All</a><span></span></div>
+<footer>Built 21-Nov-2026 16:53 IST for Hasnain · Kotak AMC distribution view · Sources: APMI &amp; SEBI (see Sources page). Past performance is not indicative of future results.</footer>
 </body></html>
